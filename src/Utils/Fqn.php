@@ -99,6 +99,6 @@ class Fqn
             return sprintf('%s\%s\%s', $rootNamespace, $resourceType, $type);
         }
 
-        return sprintf('%s\%s\%s', $rootNamespace, str_plural($type), str_singular($resourceType));
+        return sprintf('%s\%s\%s', $rootNamespace, str_plural($type), str_singular($resourceType) . str_singular($type));
     }
 }
